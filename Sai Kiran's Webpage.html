@@ -1,0 +1,261 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran's Webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6750A4; /* Material 3 Purple */
+            --secondary-color: #7D5260; /* M3 Pinkish/Brown */
+            --surface-color: #FEF7FF; /* M3 Light Purple Surface */
+            --on-surface-color: #1D1B20; /* M3 Dark Text */
+            --surface-container-color: #F3EDF7; /* M3 Lighter Container */
+            --outline-color: #79747E;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: var(--surface-color);
+            color: var(--on-surface-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--surface-container-color);
+        }
+        .hero img {
+            max-width: 180px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            animation: zoomOut 1.2s ease-out;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin: 20px 0 10px;
+            color: var(--on-surface-color);
+            font-weight: 700;
+        }
+        .hero p.tagline {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+        }
+        .hero .accent {
+            width: 70px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        /* Content Cards */
+        .content-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border: 1px solid var(--outline-color);
+            transition: box-shadow 0.3s ease;
+        }
+        .content-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Keyframes */
+        @keyframes zoomOut {
+            from { transform: scale(1.15); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 24px;
+        }
+        h2 {
+            margin-top: 48px;
+            margin-bottom: 16px;
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 1.8rem;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 16px;
+        }
+        table th, table td {
+            padding: 16px;
+            border: 1px solid var(--outline-color);
+            text-align: left;
+        }
+        table th {
+            background-color: var(--surface-container-color);
+            font-weight: 500;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        
+        /* Feedback Form */
+        form {
+            background-color: white;
+            padding: 24px;
+            margin-top: 24px;
+            border-radius: 12px;
+            border: 1px solid var(--outline-color);
+        }
+        
+        .form-intro {
+            color: var(--secondary-color);
+            margin-bottom: 24px;
+        }
+
+        label {
+            font-weight: 500;
+            margin-top: 16px;
+            display: block;
+            color: var(--on-surface-color);
+        }
+        input, textarea {
+            width: calc(100% - 24px);
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid var(--outline-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #FFFFFF;
+        }
+        input:focus, textarea:focus {
+            outline: 2px solid var(--primary-color);
+            border-color: transparent;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 24px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 500;
+            font-size: 1rem;
+            border: none;
+            border-radius: 20px; /* Pill shape for buttons */
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        button:hover {
+            background-color: #5A3E92;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <img src="https://i.postimg.cc/pXsk2grg/my.png" alt="Sai Kiran Bolem">
+        <h1>Sai Kiran Bolem</h1>
+        <p class="tagline">Curated for the Curious</p>
+        <div class="accent"></div>
+        <p class="tagline">Health informatics - where data drives the future of health</p>
+    </section>
+
+    <main>
+        <section>
+            <h2>Important Years</h2>
+            <div class="content-card">
+                <table>
+                    <tr>
+                        <th>Years</th>
+                        <th>Milestone</th>
+                    </tr>
+                    <tr>
+                        <td>Aug 2024</td>
+                        <td>Started Master's Program</td>
+                    </tr>
+                    <tr>
+                        <td>May 2026</td>
+                        <td>Expected Graduation</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Qualifications</h2>
+            <div class="content-card">
+                <strong>Graduate Student (MS in Health Informatics - STEM)</strong><br>
+                Graduate Teaching Assistant, Fairfax campus (Feb 2025 - Present) and Classroom Support Agent, Costello College of Business, Arlington Campus (Feb 2025 - Present).<br>
+                Expected Graduation: May 2026.<br>
+                Current GPA: <strong>3.9</strong><br>
+                Skills gained: Python, SQL, R, MS Office Suite.
+            </div>
+            <div class="content-card">
+                <strong>Bachelor of Doctor of Pharmacy (JNTUH University)</strong><br>
+                Oct 2013 - May 2019. Proficient in Chemistry, Anatomy & Physiology, Pharmacology, Pathophysiology, Microbiology.
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="content-card">
+                <strong>Medical Claims Associate - Optum Global Solutions</strong> (Oct 2019 - Dec 2022)<br>
+                <ul>
+                    <li>Performed pre-processing of medical claims by retrieving data from the data inventory.</li>
+                    <li>Validated claims for mismatched patient demographics, incorrect practitioner details, and insurance coverage.</li>
+                    <li>Identified and flagged potentially fraudulent claims for further review before processing for ICD code modifications and payments.</li>
+                    <li>Maintained data integrity by inspecting reference sources for discrepancies during regular updates.</li>
+                    <li>Gained basic domain knowledge in PC Hardware & Software (Windows, Linux OS).</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <strong>Clinical Pharmacy Intern - AIG Hospital, Hyderabad, India</strong> (Oct 2016 - Dec 2019)<br>
+                <ul>
+                    <li>Conducted a study on GERD patients by collecting data through surveys across a diverse age range (25-75 years).</li>
+                    <li>Analyzed and synthesized the collected data to develop a comprehensive poster presentation.</li>
+                    <li>Engaged in direct patient counseling, communicating complex medical information effectively.</li>
+                </ul>
+            </div>
+             <p><strong>For more Information, please <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">click here</a></strong></p>
+        </section>
+
+        <section>
+            <h2>Constructive Feedback</h2>
+            <form action="submit_form.php" method="POST">
+                <p class="form-intro">If you are a recruiter or professional in the field, I would appreciate your honest opinion on my portfolio. Where am I lacking? Where do I need to improve?</p>
+                
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+                
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+```
